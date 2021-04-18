@@ -46,9 +46,9 @@ public class BlockSearch extends BukkitRunnable {
 
     public void updateStampsSincePause() {
         if (startStamp != 0)
-            startStamp -= System.currentTimeMillis() - pausedStamp;
+            startStamp += System.currentTimeMillis() - pausedStamp;
         if (beginning != 0)
-            beginning -= System.currentTimeMillis() - pausedStamp;
+            beginning += System.currentTimeMillis() - pausedStamp;
         pausedStamp = 0;
     }
 }
