@@ -1,7 +1,7 @@
 name: BlockFinder
 author: RqndomHax
 version: 1.0
-main: fr.rqndomhax.BlockFinder
+main: fr.rqndomhax.core.BlockFinder
 website: https://github.com/RqndomHax
 commands:
   blockfinder:
