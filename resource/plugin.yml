@@ -1,0 +1,9 @@
+name: BlockFinder
+author: RqndomHax
+version: 1.0
+main: fr.rqndomhax.BlockFinder
+website: https://github.com/RqndomHax
+commands:
+  blockfinder:
+    aliases: [bf, blockf, bfinder]
+    description: Blockfinder main command, useful to look for any blocks in a desired area, blocks' coordinates will be written in a file.
