@@ -5,6 +5,7 @@ import fr.rqndomhax.utils.blocksearch.BlockSearch;
 import org.bukkit.Material;
 import org.bukkit.World;
 
+@SuppressWarnings("DataClass")
 public class BlockFinderConfig {
 
     public BlockFinder plugin;
