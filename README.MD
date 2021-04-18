@@ -16,16 +16,16 @@ Build the sources with java or copy the latest release `BlockFinder.jar` to your
 # Commands
 
 > ### `/blockfinder block <block>`
-> This command sets the `<block>` as the search targeted's block, a confirmation message will be sent.
+This command sets the `<block>` as the search targeted's block, a confirmation message will be sent.
 
 > #### `/blockfinder start`
-> This command starts the search.
+This command starts the search.
 
 > #### `/blockfinder stop`
-> This command stops the search.
+This command stops the search.
 
 > #### `/host pause <player>`
-> This command pauses the search.
+This command pauses the search.
 
 > #### `/host <world_name> <x_min> <z_min> <x_max> <z_max>`
-> This command sets the search's area.
+This command sets the search's area.
