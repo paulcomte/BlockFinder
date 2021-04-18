@@ -5,16 +5,17 @@ import org.bukkit.block.Block;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.logging.Level;
 
-public abstract class BlockSearchUtils {
+public class BlockSearchUtils {
 
     private static BlockSearch blockSearch;
 
     public static void init(BlockSearch blockSearch) {
         BlockSearchUtils.blockSearch = blockSearch;
 
-        blockSearch.file = blockSearch.config.fileManager.getConfig(new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date()));
+        blockSearch.file = blockSearch.config.fileManager.getConfig(new SimpleDateFormat("yyyy-MM-dd HH-mm-ss", Locale.ENGLISH).format(new Date()));
         blockSearch.file.set("Config.Material", blockSearch.config.target.name());
         blockSearch.file.set("Config.xMin", blockSearch.config.xMin);
         blockSearch.file.set("Config.zMin", blockSearch.config.zMin);

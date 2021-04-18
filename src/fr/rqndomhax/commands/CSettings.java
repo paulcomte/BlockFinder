@@ -7,7 +7,7 @@ import org.bukkit.command.CommandSender;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public abstract class CSettings {
+public class CSettings {
 
     public static boolean parseCommand(CommandSender sender, String[] args, BlockFinderConfig config) {
 

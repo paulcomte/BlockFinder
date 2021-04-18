@@ -4,7 +4,7 @@ import fr.rqndomhax.core.BlockFinderConfig;
 import fr.rqndomhax.utils.blocksearch.BlockSearch;
 import org.bukkit.command.CommandSender;
 
-public abstract class CStart {
+public class CStart {
 
     public static boolean parseCommand(CommandSender sender, BlockFinderConfig config) {
 

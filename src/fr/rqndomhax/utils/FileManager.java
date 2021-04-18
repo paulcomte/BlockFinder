@@ -137,10 +137,12 @@ public class FileManager {
 
                 YamlConfiguration defConfig = YamlConfiguration.loadConfiguration(defConfigStream);
                 this.config.setDefaults(defConfig);
+                defConfigStream.close();
 
-            } catch (NullPointerException ignored) {
-
+            } catch (NullPointerException | IOException e) {
+                e.printStackTrace();
             }
+
             return this;
         }
 

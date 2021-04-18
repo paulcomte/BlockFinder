@@ -4,7 +4,7 @@ import fr.rqndomhax.core.BlockFinderConfig;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 
-public abstract class CBlock {
+public class CBlock {
 
     public static boolean parseCommand(CommandSender sender, String[] args, BlockFinderConfig config) {
 

@@ -5,6 +5,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
+import java.util.Locale;
+
 public class BlockFinderCommand implements CommandExecutor {
 
     BlockFinderConfig config;
@@ -23,7 +25,7 @@ public class BlockFinderCommand implements CommandExecutor {
             return false;
         }
 
-        switch (args[0].toLowerCase()) {
+        switch (args[0].toLowerCase(Locale.ENGLISH)) {
             case "start":
                 return CStart.parseCommand(sender, config);
             case "cancel":
